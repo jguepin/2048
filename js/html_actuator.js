@@ -155,13 +155,12 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-via", "gabrielecirulli");
-  tweet.setAttribute("data-url", "http://git.io/2048");
-  tweet.setAttribute("data-counturl", "http://gabrielecirulli.github.io/2048/");
+  tweet.setAttribute("data-via", "franceinfo");
+  tweet.setAttribute("data-url", "http://www.franceinfo.fr/politique/le-2048-du-gouvernement-valls-1372135-2014-04-02");
+  tweet.setAttribute("data-counturl", "http://www.franceinfo.fr/politique/le-2048-du-gouvernement-valls-1372135-2014-04-02");
   tweet.textContent = "Tweet";
 
-  var text = "I scored " + this.score + " points at 2048, a game where you " +
-             "join numbers to score high! #2048game";
+  var text = "Je viens de jouer au 2048 du gouvernement Valls de @franceinfo";
   tweet.setAttribute("data-text", text);
 
   return tweet;
